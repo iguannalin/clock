@@ -39,7 +39,7 @@ window.addEventListener("load", () => {
     var y = center_y + r*Math.sin(card*30);
     console.log({card,x,y});
 
-    const text = `<!DOCTYPE html><html> <head> <title>${card}</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"><style>body{color: #f9faffde;
+    const text = `<!DOCTYPE html><html> <head> <title>${card}</title> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"><style>body{margin:0 auto;text-align:center;color: #f9faffde;
       text-shadow: #858ebc -2px 2px 8px;width:100vw;height:100vh;background-color:${colors[card]};}</style><h1>${card+1}</h1></body></html>`;
     const blob = new Blob([text], {type: "text/html"});
     const blobUrl = URL.createObjectURL(blob);
